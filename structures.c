@@ -999,7 +999,8 @@ void tglf_fetch_message_media_new (struct tgl_state *TLS, struct tgl_message_med
     M->type = tgl_message_media_unsupported;
     break;
   default:
-    assert (0);
+    M->type = tgl_message_media_unsupported;
+    break;
   }
 }
 
